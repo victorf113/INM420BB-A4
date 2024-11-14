@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INM420BB Assignment 4</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">    
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="hero">
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <div class="text">
+            <h1>WoodCraft Studio</h1>
+            <p>Handcrafted Wooden Furniture Made to Perfection</p>
+        </div>
+    </div>
+
+    <div class="section section-1">
+        <div class="text">
+            <h2>Our Craftsmanship</h2>
+            <p>Our furniture is made with the finest materials and traditional techniques.</p>
+        </div>
+    </div>
+
+    <div class="section section-2">
+        <div class="text">
+            <h2>Unique Designs</h2>
+            <p>Each piece is custom-made and designed to fit your lifestyle.</p>
+        </div>
+    </div>
+
+    <div class="section section-furniture">
+        <div class="text">
+            <h2>Our Furniture</h2>
+            <p>Browse our collection of handcrafted furniture.</p>
+        </div>
+        <!-- GlideJS Carousel for Furniture -->
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img src="../assets/img/furniture1.jpg" alt="Furniture 1"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture2.jpg" alt="Furniture 2"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture3.jpg" alt="Furniture 3"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture4.jpg" alt="Furniture 4"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture4.jpg" alt="Furniture 4"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture4.jpg" alt="Furniture 4"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture4.jpg" alt="Furniture 4"></li>
+                    <li class="glide__slide"><img src="../assets/img/furniture4.jpg" alt="Furniture 4"></li>
+                </ul>
+            </div>
+            <!-- GlideJS Controls -->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-3">
+        <div class="text">
+            <h2>Get in Touch</h2>
+            <p>Contact us to learn more about pre-ordering your custom furniture.</p>
+        </div>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Glide -->
+    <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+</html>
